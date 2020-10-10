@@ -10,7 +10,9 @@ package main
 // Please do not change this file.
 //
 
-import "../mr"
+import (
+	"../mr"
+)
 import "plugin"
 import "os"
 import "fmt"
@@ -35,6 +37,7 @@ func loadPlugin(filename string) (func(string, string) []mr.KeyValue, func(strin
 	p, err := plugin.Open(filename)
 	if err != nil {
 		log.Fatalf("cannot load plugin %v", filename)
+		log.Fatalf("error:%v",err)
 	}
 	xmapf, err := p.Lookup("Map")
 	if err != nil {

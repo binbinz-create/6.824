@@ -23,7 +23,34 @@ type ExampleReply struct {
 }
 
 // Add your RPC definitions here.
+const (
+	MsgForTask = iota            // ask a task
+	MsgForInterFileLoc			 //send intermediate file's localtion to master
+	MsgForFinishMap				 //finsh a map task
+	MsgForFinishReduce			// finsh a reduce task
+)
 
+// args struct
+type MyArgs struct{
+	MessageType int     //the value is the constant listed above
+	MessageCnt string
+}
+// this args struct is the form send intermediate files' filename to master
+type MyIntermediateFile struct {
+	MessageType int
+	MessageCnt string
+	NReduceType int
+}
+
+//reply struct
+type MyReply struct{
+	FileName string
+	MapNumAllocated int
+	NReduce int
+	ReduceNumAllocated int
+	TaskType string    // refer a task type : "map" or "reduce"
+	ReduceFileList []string
+}
 
 // Cook up a unique-ish UNIX-domain socket name
 // in /var/tmp, for the master.

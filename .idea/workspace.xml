@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a9b16d6-6cb3-4c7a-8ffa-e6653354edeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/mrmaster.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrmaster.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mrsequential.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrsequential.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mrworker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrworker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mr/master.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/master.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mr/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mr/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mrapps/wc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mrapps/wc.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1iXP4Kpy95AaMG0AVMHLIrpWYhL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager" selected="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt">
+    <configuration name="go build mrworker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="6.824" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/mrworker.go" />
+      <package value="src" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="6.824" />
+      <working_directory value="$PROJECT_DIR$/src/main" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/main/mrmaster.go" />
+      <package value="src/src/main" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt" />
+      <item itemvalue="Go Build.go build mrworker.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt" />
+        <item itemvalue="Go Build.go build mrworker.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" width="1071" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602309890794">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" width="1071" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1602309890794" />
+    <state x="450" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602052515698">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602052515698" />
+    <state width="1398" height="262" key="GridCell.Tab.0.bottom" timestamp="1602312246155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602312246155" />
+    <state width="1398" height="262" key="GridCell.Tab.0.center" timestamp="1602312246155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602312246155" />
+    <state width="1398" height="262" key="GridCell.Tab.0.left" timestamp="1602312246154">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602312246154" />
+    <state width="1398" height="262" key="GridCell.Tab.0.right" timestamp="1602312246155">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="262" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602312246155" />
+    <state x="128" y="161" key="SettingsEditor" timestamp="1602316169613">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="128" y="161" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602316169613" />
+    <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1602294723207">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="200" width="540" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1602294723207" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1602292317394">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1602292317394" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602292312928">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1602292312928" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1602294087146">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1602294087146" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602168963579">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602168963579" />
+  </component>
+</project>

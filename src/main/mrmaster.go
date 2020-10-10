@@ -9,12 +9,15 @@ package main
 // Please do not change this file.
 //
 
-import "../mr"
+import (
+	"../mr"
+)
 import "time"
 import "os"
 import "fmt"
 
 func main() {
+
 	if len(os.Args) < 2 {
 		fmt.Fprintf(os.Stderr, "Usage: mrmaster inputfiles...\n")
 		os.Exit(1)
@@ -26,4 +29,5 @@ func main() {
 	}
 
 	time.Sleep(time.Second)
+
 }
