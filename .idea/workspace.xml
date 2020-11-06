@@ -2,13 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a9b16d6-6cb3-4c7a-8ffa-e6653354edeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/mrmaster.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrmaster.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/mrsequential.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrsequential.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/mrworker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mrworker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mr/master.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/master.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mr/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/rpc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mr/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mr/worker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mrapps/wc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mrapps/wc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-1-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-10-9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-11-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-12-9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-2-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-4-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-5-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-6-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-5" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-6" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-7-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-crash-all" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-crash-all" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-0" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-9" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/mr-tmp/mr-out-9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/raft/raft.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/raft/raft.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +86,7 @@
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+    <option name="useGoPathFromSystemEnvironment" value="false" />
   </component>
   <component name="ProjectId" id="1iXP4Kpy95AaMG0AVMHLIrpWYhL" />
   <component name="ProjectViewState">
@@ -31,13 +97,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RunManager" selected="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt">
     <configuration name="go build mrworker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -59,8 +125,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt" />
       <item itemvalue="Go Build.go build mrworker.go" />
+      <item itemvalue="Go Build.go run mrmaster.go /Users/zhubin/6.824/src/main/pg-*.txt" />
     </list>
     <recent_temporary>
       <list>
@@ -78,10 +144,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" width="1071" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1602309890794" />
-    <state x="450" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602052515698">
+    <state x="449" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604632604459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602052515698" />
+    <state x="449" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604632604459" />
     <state width="1398" height="262" key="GridCell.Tab.0.bottom" timestamp="1602312246155">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -98,10 +164,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="262" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602312246155" />
-    <state x="128" y="161" key="SettingsEditor" timestamp="1602316169613">
+    <state x="128" y="161" key="SettingsEditor" timestamp="1604650417626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="128" y="161" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602316169613" />
+    <state x="128" y="161" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604650417626" />
     <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1602294723207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -118,9 +184,20 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1602294087146" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602168963579">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604630978884">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602168963579" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604630978884" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/raft/raft.go</url>
+          <line>370</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
