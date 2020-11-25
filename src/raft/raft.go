@@ -18,6 +18,7 @@ package raft
 //
 
 import (
+	"bytes"
 	"fmt"
 	"math/rand"
 	"sync"
@@ -26,8 +27,8 @@ import (
 import "sync/atomic"
 import "../labrpc"
 
-// import "bytes"
-// import "../labgob"
+
+import "../labgob"
 
 const (
 	HeartbeatInterval    = time.Duration(120) * time.Millisecond
@@ -164,6 +165,14 @@ func (rf *Raft) persist() {
 	// e.Encode(rf.yyy)
 	// data := w.Bytes()
 	// rf.persister.SaveRaftState(data)
+
+	w := new(bytes.Buffer)
+	e := labgob.NewEncoder(w)
+	e.Encode(rf.currentTerm)
+	e.Encode(rf.votedFor)
+	e.Encode(rf.logs)
+	data := w.Bytes()
+	rf.persister.SaveRaftState(data)
 }
 
 //
@@ -186,6 +195,23 @@ func (rf *Raft) readPersist(data []byte) {
 	//   rf.xxx = xxx
 	//   rf.yyy = yyy
 	// }
+	r := bytes.NewBuffer(data)
+	d := labgob.NewDecoder(r)
+
+	var currentTerm ,votedFor int
+	var logs []LogEntry
+
+	if d.Decode(&currentTerm) != nil || d.Decode(&votedFor) != nil|| d.Decode(&logs) != nil{
+		DPrintf("%v error recover from persisit",rf)
+		return
+	}
+
+	rf.currentTerm = currentTerm
+	rf.votedFor = votedFor
+	rf.logs = logs
+
+
+
 }
 
 //
@@ -217,6 +243,7 @@ type RequestVoteReply struct {
 func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
+	defer rf.persist() //executed before unlock
 	// Your code here (2A, 2B).
 	if args.Term < rf.currentTerm || (args.Term == rf.currentTerm && rf.votedFor != -1 && rf.votedFor != args.CandidateId) { //term < currentTerm  或者 此follower已经投过票了(投过了票，则term已经更新，和args.term会相等)
 		reply.Term = rf.currentTerm //返回让candidate更新自己的term，并且转为follower
@@ -262,12 +289,17 @@ type AppendEntriesArgs struct {
 type AppendEntriesReply struct {
 	Term    int  //2A
 	Success bool //2A
+
+	//OPTIMIZE : 3c
+	ConflictTerm int   //3C
+	ConflictIndex int  //3C
 }
 
 //follower和candidate 接收心跳包
 func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply) {
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
+	defer rf.persist() //executed before unlock
 	if args.Term < rf.currentTerm{
 		reply.Success = false
 		reply.Term = rf.currentTerm
@@ -285,10 +317,34 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 
 	//entires before args.PrevLogIndex might be unmatch
 	//return false and ask Leader to decrement PrevLogIndex
-	if len(rf.logs) - 1 < args.PrevLogIndex || rf.logs[args.PrevLogIndex].Term != args.PrevLogTerm{
+	if len(rf.logs)  < args.PrevLogIndex + 1{
 		reply.Success = false
 		reply.Term = rf.currentTerm
+		// optimistically thinks receiver's log matches with Leader's as a subset
+		reply.ConflictIndex = len(rf.logs)
+		// no conflict term
+		reply.ConflictTerm = -1
 		return
+	}
+
+	if rf.logs[args.PrevLogIndex].Term != args.PrevLogTerm{
+		reply.Success = false
+		reply.Term = rf.currentTerm
+		// receiver's log in certain term unmatches Leader's log
+		reply.ConflictTerm = rf.logs[args.PrevLogIndex].Term
+
+		// expecting Leader to check the former term
+		// so set ConflictIndex to the first one of entries in ConflictTerm
+		conflictIndex := args.PrevLogIndex
+		// apparently, since rf.logs[0] are ensured to match among all servers
+		// ConflictIndex must be > 0, safe to minus 1
+		//log.Printf("conflictIndex:%d\n",conflictIndex)
+		for rf.logs[conflictIndex-1].Term == reply.ConflictTerm{
+			conflictIndex--
+		}
+		reply.ConflictIndex = conflictIndex
+		return
+
 	}
 
 	//找到follower的log与leader的log不同entry的索引,用来overwrite
@@ -367,7 +423,6 @@ func (rf *Raft) broadcastHeartbeat() {
 			}
 
 			prevLogIndex := rf.nextIndex[server] - 1
-			//log.Printf("server:%d 's prevLogIndex is %d \n",server,prevLogIndex)
 			entries := make([]LogEntry,len(rf.logs[prevLogIndex+1:]))
 			copy(entries,rf.logs[prevLogIndex+1:])
 			args := AppendEntriesArgs{
@@ -409,9 +464,24 @@ func (rf *Raft) broadcastHeartbeat() {
 					if reply.Term > rf.currentTerm{
 						rf.currentTerm = reply.Term
 						rf.convertTo(Follower)
+						rf.persist()
 					}else{
-						//log unmatch
-						rf.nextIndex[server]--
+						// log unmatch, update nextIndex[server] for the next trial
+						rf.nextIndex[server] = reply.ConflictIndex
+
+						// if term found, override it to
+						// the first entry after entries in ConflictTerm
+						if reply.ConflictTerm != -1{
+							for i := args.PrevLogIndex ; i >= 1; i--{
+								if rf.logs[i-1].Term == reply.ConflictTerm{
+									// in next trial, check if log entries in ConflictTerm matches
+									rf.nextIndex[server] = i;
+									break;
+								}
+							}
+						}
+
+
 						//	TODO : retry or later
 					}
 
@@ -460,6 +530,7 @@ func (rf *Raft) startElection() {
 					if reply.Term > rf.currentTerm {
 						rf.currentTerm = reply.Term
 						rf.convertTo(Follower)
+						rf.persist()
 					}
 				}
 
@@ -539,6 +610,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		rf.logs = append(rf.logs,LogEntry{Command: command,Term: term})
 		rf.matchIndex[rf.me] = index
 		rf.nextIndex[rf.me] = index + 1
+		rf.persist()
 		rf.mu.Unlock()
 	}
 
@@ -625,7 +697,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	}(rf)
 
 	// initialize from state persisted before a crash
+	rf.mu.Lock()
 	rf.readPersist(persister.ReadRaftState())
+	rf.mu.Unlock()
 
 	return rf
 }
